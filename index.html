@@ -10,31 +10,50 @@
     <div class="calendar">
         <h1>Winter Advent Calendar</h1>
         <div class="grid">
-            <!-- Doors, each with an ID, will trigger the openDoor function -->
-            <div class="door" id="door1" onclick="openDoor(1)">1</div>
-            <div class="door" id="door2" onclick="openDoor(2)">2</div>
-            <div class="door" id="door3" onclick="openDoor(3)">3</div>
-            <div class="door" id="door4" onclick="openDoor(4)">4</div>
-            <div class="door" id="door5" onclick="openDoor(5)">5</div>
-            <div class="door" id="door6" onclick="openDoor(6)">6</div>
-            <div class="door" id="door7" onclick="openDoor(7)">7</div>
-            <div class="door" id="door8" onclick="openDoor(8)">8</div>
-            <div class="door" id="door9" onclick="openDoor(9)">9</div>
-            <div class="door" id="door10" onclick="openDoor(10)">10</div>
-            <div class="door" id="door11" onclick="openDoor(11)">11</div>
-            <div class="door" id="door12" onclick="openDoor(12)">12</div>
+            <!-- 30 Days (windows) -->
+            <!-- Each div will be a "window" of the advent calendar -->
+            <!-- I’ll leave them empty for now so you can fill them with messages later -->
+            <div class="window" id="day1" onclick="openWindow(1)">1</div>
+            <div class="window" id="day2" onclick="openWindow(2)">2</div>
+            <div class="window" id="day3" onclick="openWindow(3)">3</div>
+            <div class="window" id="day4" onclick="openWindow(4)">4</div>
+            <div class="window" id="day5" onclick="openWindow(5)">5</div>
+            <div class="window" id="day6" onclick="openWindow(6)">6</div>
+            <div class="window" id="day7" onclick="openWindow(7)">7</div>
+            <div class="window" id="day8" onclick="openWindow(8)">8</div>
+            <div class="window" id="day9" onclick="openWindow(9)">9</div>
+            <div class="window" id="day10" onclick="openWindow(10)">10</div>
+            <div class="window" id="day11" onclick="openWindow(11)">11</div>
+            <div class="window" id="day12" onclick="openWindow(12)">12</div>
+            <div class="window" id="day13" onclick="openWindow(13)">13</div>
+            <div class="window" id="day14" onclick="openWindow(14)">14</div>
+            <div class="window" id="day15" onclick="openWindow(15)">15</div>
+            <div class="window" id="day16" onclick="openWindow(16)">16</div>
+            <div class="window" id="day17" onclick="openWindow(17)">17</div>
+            <div class="window" id="day18" onclick="openWindow(18)">18</div>
+            <div class="window" id="day19" onclick="openWindow(19)">19</div>
+            <div class="window" id="day20" onclick="openWindow(20)">20</div>
+            <div class="window" id="day21" onclick="openWindow(21)">21</div>
+            <div class="window" id="day22" onclick="openWindow(22)">22</div>
+            <div class="window" id="day23" onclick="openWindow(23)">23</div>
+            <div class="window" id="day24" onclick="openWindow(24)">24</div>
+            <div class="window" id="day25" onclick="openWindow(25)">25</div>
+            <div class="window" id="day26" onclick="openWindow(26)">26</div>
+            <div class="window" id="day27" onclick="openWindow(27)">27</div>
+            <div class="window" id="day28" onclick="openWindow(28)">28</div>
+            <div class="window" id="day29" onclick="openWindow(29)">29</div>
+            <div class="window" id="day30" onclick="openWindow(30)">30</div>
         </div>
-
-        <!-- The message box will show when you click on a door -->
+        <!-- Message Box to show when you click a window -->
         <div id="messageBox" class="message-box"></div>
-    </div>
 
-    <!-- Input to change the message of a specific door -->
-    <div id="inputBox" class="input-box">
-        <label for="doorNumber">Enter Door Number (1-12):</label>
-        <input type="number" id="doorNumber" min="1" max="12">
-        <textarea id="newMessage" placeholder="Enter your message here..."></textarea>
-        <button onclick="updateMessage()">Update Message</button>
+        <!-- Input to change the message of a specific day -->
+        <div id="inputBox" class="input-box">
+            <label for="dayNumber">Enter Day Number (1-30):</label>
+            <input type="number" id="dayNumber" min="1" max="30">
+            <textarea id="newMessage" placeholder="Enter your message here..."></textarea>
+            <button onclick="updateMessage()">Update Message</button>
+        </div>
     </div>
 
     <script src="script.js"></script>
